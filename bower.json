@@ -1,0 +1,24 @@
+{
+  "name": "danhable.com",
+  "version": "1.0.0",
+  "private": true,
+  "authors": [
+    "Dan Hable <dan@danhable.com>"
+  ],
+  "description": "My personal landing page on the internet.",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "fontawesome": "~4.2.0"
+  }
+}

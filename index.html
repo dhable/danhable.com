@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
+        <style>
+            * {
+                font-family: 'Helvetica', sans-serif;
+            }
+
+            header {
+                border: 0;
+                padding: ;
+                margin: 4em 1em;
+            }
+
+            header li {
+                list-style: none;
+            }
+
+            .section {
+                margin: 4em 1em;
+                padding: 1em;
+                background-color: White;
+                -moz-box-shadow: 3px 3px 5px 6px #ccc;
+                -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+                box-shadow: 3px 3px 5px 6px #ccc;
+            }
+
+            .section>h1 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+                display: inline-block;
+                border-bottom: .25em solid Red;
+            }
+
+            .entity {
+                width: 100%;
+                margin-bottom: 2em;
+            }
+
+            .entity>ul { margin: .25em 4em; }
+
+
+            /* layout stuff for the experience meters in skills section */
+            .bar {
+                background-color: #b1b1b1;
+                padding: 0;
+                width: 100%;
+            }
+            .fill { 
+                background-color: #FF9999;
+                display: inline-block; 
+                padding: 0 0.5em;
+            }
+            .fill1 { width: 20%; }
+            .fill2 { width: 40%; }
+            .fill3 { width: 60%; }
+            .fill4 { width: 80%; }
+            .fill5 { width: 100%; }
+        </style>
+    </head>
+
+
+    <body id="home" data-spy="scroll" data-target="#site-nav-bar" style="position: relative;">
+        <nav id="site-nav-bar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="col-md-4 col-md-offset-4">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="active"><a href="#home">Home</a></li>
+                        <li role="presentation"><a href="#skills">Skills</a></li>
+                        <li role="presentation"><a href="#experience">Exp</a></li>
+                        <li role="presentation"><a href="#education">Edu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+
+                    <header id="profile" class="section">
+                        <h1>Dan Hable</h1>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/dan.jpg" width="200" height="200" alt="Dan Hable">
+                            </div>
+
+                            <div class="col-md-8">
+                                Developer developer developer developer.
+
+
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-2x fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-2x fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-2x fa-stack-overflow"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-2x fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+
+
+                    <section id="skills" class="section">
+                        <h1>Technical Skills</h1>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-4">
+
+                                <div class="entity">
+                                    <div class="row">
+                                        <div class="col-xs-7">Java &amp; JVM</div>
+                                        <div class="col-xs-5">
+                                            <div class="bar"><span class="fill fill4">Advanced</span></div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        I've been an developer in the Java and JVM ecosystem since 2002. I have advanced
+                                        level experience with Maven, Guice, Guava, Jersey, Spring, Jackson, NIO, Hibernate,
+                                        Java 8 lambdas and Java 8 streams. I'm also professient with Clojure and Groovy as 
+                                        alternatives on the JVM platform.
+                                    </p>
+                                    <p>
+                                        I've used Java and related JVM technologies while employed with 
+                                        <a href="#experience/medio">Medio</a>, 
+                                        <a href="#experience/qthru">QThru</a>,
+                                        <a href="#experience/blackberry">BlackBerry</a> and 
+                                        <a href-"#expereicne/ph-mining">P&amp;H Mining</a>.
+                                    </p>
+                                </div>
+
+                                <div class="entity">
+                                    <div class="row">
+                                        <div class="col-xs-7">JavaScript &amp; node.js</div>
+                                        <div class="col-xs-5">
+                                            <div class="bar"><span class="fill fill5">Expert</span></div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        I started exploring JavaScript with Netscape Navigator 3 back in 1998. I've leveraged
+                                        JavaScript in the browser to generate dynamic UI elements, including autocomplete
+                                        fields before jQuery and chart libraries, like D3 and Google Chart, to report on data.
+                                        In 2012, I led the adoption of node.js for a real-time communication component with
+                                        <a href="#experience/qthru">QThru</a>. I've used grunt, restify, sequelize, react,
+                                        backbone, mongoose, D3, socket.io and lodash.
+                                    </p>
+                                    <p>
+                                        I've used JavaScript and node.js technologies at 
+                                        <a href="#experience/qthru">QThru</a>, 
+                                        <a href="#experience/code-fellows">Code Fellows</a> and 
+                                        <a href="#experience/medio">Medio</a>.
+                                    </p>
+                                </div>
+
+                                <div class="entity">
+                                    <div class="row">
+                                        <div class="col-xs-7">Data Science &amp; Big Data</div>
+                                        <div class="col-xs-5">
+                                            <div class="bar"><span class="fill fill3">Intermediate</span></div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        I've always has an inclination to solve problems related to the storage, retriveal
+                                        and manipulation of data. I've spent considerable years setting up and working with
+                                        various relational databases - SQL Server, MySQL and PostgreSQL, For larger data sets,
+                                        I've used MongoDB, CouchDB and Cassandra. I've recently started deep diving into data 
+                                        science using R and python.
+                                    </p>
+                                    <p>
+                                        I've used relational and NoSQL databases while at
+                                        <a href="#experience/medio">Medio</a>, 
+                                        <a href="#experience/code-fellows">Code Fellows</a>,
+                                        <a href="#experience/qthru">QThru</a>,
+                                        <a href="#experience/blackberry">BlackBerry</a> and 
+                                        <a href-"#expereicne/ph-mining">P&amp;H Mining</a>.
+                                    </p>
+                                </div>
+
+                                <div class="entity">
+                                    <div class="row">
+                                        <div class="col-xs-7">DevOps</div>
+                                        <div class="col-xs-5">
+                                            <div class="bar"><span class="fill fill3">Intermediate</span></div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        I've been a strong adocate for DevOps since my 20% project at BlackBerry focusing
+                                        on improving the development pipeline. Since then, I've also been solely responsible
+                                        for building and managing infrastructure in AWS and Digital Ocean, setting up continious 
+                                        delivery solutions with Jenkins and TeamCity, automating development environment with
+                                        Vagrant, and automating Linux deployments with Ansible.
+                                    </p>
+                                    <p>
+                                        I've demonstrated my DevOps skills at
+                                        <a href="#experience/medio">Medio</a>,
+                                        <a href="#expereince/code-fellows">Code Fellows</a>,
+                                        <a href="#experience/qthru">QThru</a> and
+                                        <a href="#experience/blackberry">BlackBerry</a>.
+                                    </p>
+                                </div>
+
+                                <div class="entity">
+                                    <div class="row">
+                                        <div class="col-xs-7">HTML, CSS &amp; Design</div>
+                                        <div class="col-xs-5">
+                                            <div class="bar"><span class="fill fill2">Beginner</div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        I have a fundamental knowledge of encoding HTML and CSS with a basic
+                                        understanding of design principals and information design. Much of my 
+                                        knowledge is focused on HTML5 standards and much of my work has been
+                                        in more enterprise dashboard applications. I have used bootstrap and
+                                        dabbled with foundation.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="experience" class="section">
+                        <h1>Work Experience</h1>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-4">
+                                <div id="experience/medio" class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Senior Software Engineer</span>
+                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jan 2014 - Sep 2014</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;Medio</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led redesign of JavaScript data collection SDK improving API and reducing size.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Prototyped Facebook targeted ads as an additional outbound marketing channel.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led addition of mobile push notifications as an additional outbound marketing channel.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Fixed long standing bug potentially causing a ~60% data loss with events in Cassandra.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="experience/code-fellows" class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Instructor</span>
+                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Oct 2013 - Dec 2014</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;Code Fellows</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Developed syllabus, selected readings and built exercises for first run of JavaScript bootcamp.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Lectured on JavaScript topics and computer science fundamentals and held office hours.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Graduated 95% of students in the first JavaScript bootcamp.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="experience/qthru" class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Principal Software Engineer</span>
+                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;May 2012 - Sep 2013</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;QThru</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led development of real-time, distributed, PCI compliant  point of sale integration.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led development of a scalable data transform and load process based on Akka.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Refactored DB and ReST API to support multiple stores, shopping lists, deals and product info.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Automated DB schema deployments and set up continuous integration builds.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Joined CEO and CMO on sales calls to discuss product details and integration plans.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="experience/blackberry" class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Senior Software Engineer, PlayBook Platform</span>
+                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jan 2011 - Apr 2012</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led development of ActiveSync engine  in python 3.x used by team of 6 protocol developers.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Solved issues related to mail server quirks, network connectivity and memory usage.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Mentored Java developers on development best practices in Python.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7 title"><i class="fa fa-user"></i>&nbsp;Software Engineer, BIS Email</span>
+                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jun 2007 - Dec 2010</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Developed new mail and contact sync connector for Microsoft&apos;s Hotmail service.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led development of an automatic server configuration process to ease setup for users.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Led investigation into continuous delivery improvements showing 60% reduction in delivery time.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Presented improved developer workflow with git to global audience of managers.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="experience/ph-mining" class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp; Programmer/Analyst</span>
+                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Oct 2001 - Aug 2006</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;P&amp;H Mining</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Researched emerging software development technologies for use by the global IT department.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Designed, developed and supported an internal IT work flow system to demonstrate how a web 
+                                            application using Java and SQL Server could provide global access for users and rich 
+                                            reporting capabilities to management.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Designed and developed a time collection bridge using Microsoft .Net that connected the 
+                                            existing time card management solution to SAP R/3, saving the company from investing in a 
+                                            new setup.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Designed and developed a global transaction transport system that connected five legacy 
+                                            systems across the globe to the new eCommerce package.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Assisted the electrical engineering department in rolling out a source control management 
+                                            system and strategy that accommodated their legacy development process as well as their 
+                                            new development process. 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> <!-- end of row -->
+                    </section>
+
+
+        <section id="education" class="section">
+            <h1>Education</h1>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+
+                    <div class="entity">
+                        <div class="row">
+                            <span class="col-xs-7 title"><i class="fa fa-book"></i>&nbsp;BS, Computer Science</span>
+                            <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;2001 - 2007</span>
+                        </div>
+                        <div class="name"><i class="fa fa-university"></i>&nbsp;University of Wisconsin - Milwaukee</div>
+                        <ul class="fa-ul">
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Minor in Business Administrator
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        </div>
+    </div>
+</div>
+
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
