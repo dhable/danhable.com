@@ -8,14 +8,40 @@
                 font-family: 'Helvetica', sans-serif;
             }
 
+            body {
+                margin-top: 2em;
+            }
+
             header {
                 border: 0;
-                padding: ;
-                margin: 4em 1em;
+                margin: 4em 1em 0 1em;
             }
 
             header li {
                 list-style: none;
+            }
+
+            .social-links.vertical {
+                display: block;
+                text-align: right;
+                padding-right: 0em;
+            }
+
+            .social-links.horizontal {
+                display: block-inline;
+                text-align: center;
+                margin-top: 1em;
+            }
+
+            .social-links a {
+                margin: 1em;
+                padding: 1em;
+                color: White;
+                background-color: Red;
+            }
+
+            .social-links a:hover {
+                background-color: Blue;
             }
 
             .section {
@@ -53,11 +79,25 @@
                 display: inline-block; 
                 padding: 0 0.5em;
             }
-            .fill1 { width: 20%; }
-            .fill2 { width: 40%; }
-            .fill3 { width: 60%; }
-            .fill4 { width: 80%; }
-            .fill5 { width: 100%; }
+
+            .fill1 { width: 20%; -webkit-animation: fill1 2s linear; -moz-animation: fill5 2s linear; }
+            .fill2 { width: 40%; -webkit-animation: fill2 2s linear; -moz-animation: fill5 2s linear; }
+            .fill3 { width: 60%; -webkit-animation: fill3 2s linear; -moz-animation: fill5 2s linear; }
+            .fill4 { width: 80%; -webkit-animation: fill4 2s linear; -moz-animation: fill5 2s linear; }
+            .fill5 { width: 100%; -webkit-animation: fill5 2s linear; -moz-animation: fill5 2s linear; }
+
+            @-webkit-keyframes fill1 { 0% {width: 0px;} 100% {width: 20%;}  }
+            @-webkit-keyframes fill2 { 0% {width: 0px;} 100% {width: 40%;}  }
+            @-webkit-keyframes fill3 { 0% {width: 0px;} 100% {width: 60%;}  }
+            @-webkit-keyframes fill4 { 0% {width: 0px;} 100% {width: 80%;}  }
+            @-webkit-keyframes fill5 { 0% {width: 0px;} 100% {width: 100%;} }
+
+            @-moz-keyframes fill1 { 0% {width: 0px;} 100% {width: 20%;}  }
+            @-moz-keyframes fill2 { 0% {width: 0px;} 100% {width: 40%;}  }
+            @-moz-keyframes fill3 { 0% {width: 0px;} 100% {width: 60%;}  }
+            @-moz-keyframes fill4 { 0% {width: 0px;} 100% {width: 80%;}  }
+            @-moz-keyframes fill5 { 0% {width: 0px;} 100% {width: 100%;} }
+
         </style>
     </head>
 
@@ -84,22 +124,28 @@
                     <header id="profile" class="section">
                         <h1>Dan Hable</h1>
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/dan.jpg" width="200" height="200" alt="Dan Hable">
+                            <div class="col-md-3">
+                                <img src="images/dan.jpg" width="140" height="140" alt="Dan Hable">
                             </div>
 
                             <div class="col-md-8">
                                 Developer developer developer developer.
+                            </div>
 
+                            <div class="social-links col-md-1 pull-right visible-md-block visible-lg-block vertical">
+                                <a href="http://caffeinatedideas.com"><i class="fa fa-2x fa-rss"></i></a>
+                                <a href="https://www.linkedin.com/in/dhable"><i class="fa fa-2x fa-linkedin"></i></a>
+                                <a href="https://twitter.com/dhable"><i class="fa fa-2x fa-twitter"></i></a>
+                                <a href="https://github.com/dhable"><i class="fa fa-2x fa-github"></i></a>
+                                <a href="http://stackoverflow.com/users/67927/dan"><i class="fa fa-2x fa-stack-overflow"></i></a>
+                            </div>
 
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-2x fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-2x fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-2x fa-stack-overflow"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-2x fa-rss"></i></a></li>
-                                </ul>
+                            <div class="social-links col-md-1 visible-xs-block visible-sm-block horizontal">
+                                <a href="http://caffeinatedideas.com"><i class="fa fa-2x fa-rss"></i></a>
+                                <a href="https://www.linkedin.com/in/dhable"><i class="fa fa-2x fa-linkedin"></i></a>
+                                <a href="https://twitter.com/dhable"><i class="fa fa-2x fa-twitter"></i></a>
+                                <a href="https://github.com/dhable"><i class="fa fa-2x fa-github"></i></a>
+                                <a href="http://stackoverflow.com/users/67927/dan"><i class="fa fa-2x fa-stack-overflow"></i></a>
                             </div>
                         </div>
                     </header>
@@ -116,8 +162,8 @@
                                         <div class="col-xs-5">
                                             <div class="bar"><span class="fill fill4">Advanced</span></div>
                                         </div>
-                                    </div>
-                                    <p>
+                                </div>
+                                <p>
                                         I've been an developer in the Java and JVM ecosystem since 2002. I have advanced
                                         level experience with Maven, Guice, Guava, Jersey, Spring, Jackson, NIO, Hibernate,
                                         Java 8 lambdas and Java 8 streams. I'm also professient with Clojure and Groovy as 
@@ -307,10 +353,10 @@
 
                                 <div id="experience/blackberry" class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Senior Software Engineer, PlayBook Platform</span>
+                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Senior Software Engineer</span>
                                         <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jan 2011 - Apr 2012</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry</div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry, PlayBook Platform</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -329,10 +375,10 @@
 
                                 <div class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7 title"><i class="fa fa-user"></i>&nbsp;Software Engineer, BIS Email</span>
+                                        <span class="col-xs-7 title"><i class="fa fa-user"></i>&nbsp;Software Engineer</span>
                                         <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jun 2007 - Dec 2010</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry</div>
+                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry, BIS Email</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -413,6 +459,61 @@
                         </ul>
                     </div>
 
+                    <div class="entity">
+                        <div class="row">
+                            <span class="col-xs-7"><i class="fa fa-certificate"></i>&nbsp;Data Science Specialization</span>
+                            <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;2014 - 2015 (expected)</span>
+                        </div>
+                        <div class="name"><i class="fa fa-university"></i>&nbsp;John Hopkins University on Coursera</div>
+                        <ul class="fa-ul">
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/UMBPHLGDP2">Data 
+                                    Scientist&apos;s Toolbox</a> with distinction.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/5MWCZQLKED">R
+                                    Programming</a> with distinction.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/DQVMMF7XTG">Getting
+                                    and Cleaning Data</a> with distinction.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/58W79MWYM3">
+                                    Exploratory Data Analysis</a> with distinction.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Currently enrolled in Reproducable Research.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/WLAM8GMTJJ">
+                                    Statistical Inference</a>.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Pending enrollment in Regression Models.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Pending enrollment in Practical Machine Learning.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Pending enrollment in Developing Data Products.
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-angle-right"></i>
+                                Pending enrollment in Data Science Capstone.
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -423,5 +524,17 @@
 
         <script src="lib/jquery/dist/jquery.min.js"></script>
         <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $("a[href^='#']").on("click", function(e) {
+                e.preventDefault();
+
+                var hash = this.hash;
+                $("html, body").animate({
+                    scrollTop: $(hash).offset().top
+                }, 300, function() {
+                    window.location.hash = hash;
+                });
+            });
+        </script>
     </body>
 </html>
