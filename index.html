@@ -9,7 +9,7 @@
             }
 
             body {
-                margin-top: 2em;
+                margin: 5em 0;
             }
 
             header {
@@ -21,31 +21,18 @@
                 list-style: none;
             }
 
-            .social-links.vertical {
-                display: block;
+            .social-links {
                 text-align: right;
-                padding-right: 0em;
             }
 
-            .social-links.horizontal {
-                display: block-inline;
-                text-align: center;
-                margin-top: 1em;
-            }
-
-            .social-links a {
-                margin: 1em;
+            .placeholder {
+                margin-bottom: 2em;
                 padding: 1em;
-                color: White;
-                background-color: Red;
-            }
-
-            .social-links a:hover {
-                background-color: Blue;
+                display: block;
             }
 
             .section {
-                margin: 4em 1em;
+                margin: 0 1em;
                 padding: 1em;
                 background-color: White;
                 -moz-box-shadow: 3px 3px 5px 6px #ccc;
@@ -74,16 +61,17 @@
                 padding: 0;
                 width: 100%;
             }
+
             .fill { 
                 background-color: #FF9999;
                 display: inline-block; 
                 padding: 0 0.5em;
             }
 
-            .fill1 { width: 20%; -webkit-animation: fill1 2s linear; -moz-animation: fill5 2s linear; }
-            .fill2 { width: 40%; -webkit-animation: fill2 2s linear; -moz-animation: fill5 2s linear; }
-            .fill3 { width: 60%; -webkit-animation: fill3 2s linear; -moz-animation: fill5 2s linear; }
-            .fill4 { width: 80%; -webkit-animation: fill4 2s linear; -moz-animation: fill5 2s linear; }
+            .fill1 { width: 20%;  -webkit-animation: fill1 2s linear; -moz-animation: fill5 2s linear; }
+            .fill2 { width: 40%;  -webkit-animation: fill2 2s linear; -moz-animation: fill5 2s linear; }
+            .fill3 { width: 60%;  -webkit-animation: fill3 2s linear; -moz-animation: fill5 2s linear; }
+            .fill4 { width: 80%;  -webkit-animation: fill4 2s linear; -moz-animation: fill5 2s linear; }
             .fill5 { width: 100%; -webkit-animation: fill5 2s linear; -moz-animation: fill5 2s linear; }
 
             @-webkit-keyframes fill1 { 0% {width: 0px;} 100% {width: 20%;}  }
@@ -102,15 +90,15 @@
     </head>
 
 
-    <body id="home" data-spy="scroll" data-target="#site-nav-bar" style="position: relative;">
-        <nav id="site-nav-bar" class="navbar navbar-default navbar-fixed-top">
+    <body data-spy="scroll" data-target="#site-nav-bar" style="position: relative;">
+        <nav id="site-nav-bar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="col-md-4 col-md-offset-4">
                     <ul class="nav nav-pills">
-                        <li role="presentation" class="active"><a href="#home">Home</a></li>
-                        <li role="presentation"><a href="#skills">Skills</a></li>
-                        <li role="presentation"><a href="#experience">Exp</a></li>
-                        <li role="presentation"><a href="#education">Edu</a></li>
+                        <li role="presentation" class="active"><a href="#profile"><i class="fa fa-2x fa-home"></i></a></li>
+                        <li role="presentation"><a href="#skills"><i class="fa fa-2x fa-tasks"></i></a></li>
+                        <li role="presentation"><a href="#experience"><i class="fa fa-2x fa-building"></i></a></li>
+                        <li role="presentation"><a href="#education"><i class="fa fa-2x fa-mortar-board"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -120,37 +108,45 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
 
-
+                    <div id="profile"></div>
                     <header id="profile" class="section">
                         <h1>Dan Hable</h1>
+
                         <div class="row">
-                            <div class="col-md-3">
-                                <img src="images/dan.jpg" width="140" height="140" alt="Dan Hable">
+                            <div class="col-md-3" style="text-align: center;">
+                                <p>
+                                    <img src="images/dan.jpg" width="140" height="140" alt="Dan Hable">
+                                </p>
+                                <p>
+                                    <a href="http://caffeinatedideas.com"><i class="fa fa-fw fa-2x fa-rss"></i></a>
+                                    <a href="https://www.linkedin.com/in/dhable"><i class="fa fa-fw fa-2x fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/dhable"><i class="fa fa-fw fa-2x fa-twitter"></i></a>
+                                    <a href="https://github.com/dhable"><i class="fa fa-fw fa-2x fa-github"></i></a>
+                                </p>
                             </div>
 
-                            <div class="col-md-8">
-                                Developer developer developer developer.
-                            </div>
-
-                            <div class="social-links col-md-1 pull-right visible-md-block visible-lg-block vertical">
-                                <a href="http://caffeinatedideas.com"><i class="fa fa-2x fa-rss"></i></a>
-                                <a href="https://www.linkedin.com/in/dhable"><i class="fa fa-2x fa-linkedin"></i></a>
-                                <a href="https://twitter.com/dhable"><i class="fa fa-2x fa-twitter"></i></a>
-                                <a href="https://github.com/dhable"><i class="fa fa-2x fa-github"></i></a>
-                                <a href="http://stackoverflow.com/users/67927/dan"><i class="fa fa-2x fa-stack-overflow"></i></a>
-                            </div>
-
-                            <div class="social-links col-md-1 visible-xs-block visible-sm-block horizontal">
-                                <a href="http://caffeinatedideas.com"><i class="fa fa-2x fa-rss"></i></a>
-                                <a href="https://www.linkedin.com/in/dhable"><i class="fa fa-2x fa-linkedin"></i></a>
-                                <a href="https://twitter.com/dhable"><i class="fa fa-2x fa-twitter"></i></a>
-                                <a href="https://github.com/dhable"><i class="fa fa-2x fa-github"></i></a>
-                                <a href="http://stackoverflow.com/users/67927/dan"><i class="fa fa-2x fa-stack-overflow"></i></a>
+                            <div class="col-md-9">
+                                <p>
+                                    Software engineer with 15 years of experience delivering scalable, fault tolerant
+                                    distributed solutions. Specializes in building high volume, real-time data pipelines 
+                                    for mobile and rich internet applications using open source tools. Currently seeking
+                                    a leadership position with a company in the midwest contributing to data focused
+                                    products.
+                                </p>
+                                <!--
+                                <div class="social-links">
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa fa-li fa-rss"></i>
+                                   </ul>
+                                </div>
+                                -->
                             </div>
                         </div>
                     </header>
 
 
+                    <div id="skills" class="placeholder"></div>
                     <section id="skills" class="section">
                         <h1>Technical Skills</h1>
                         <div class="row">
@@ -158,52 +154,53 @@
 
                                 <div class="entity">
                                     <div class="row">
-                                        <div class="col-xs-7">Java &amp; JVM</div>
+                                        <div class="col-xs-7"><i class="fa fa-fw fa-tasks"></i>&nbsp;Java &amp; JVM</div>
                                         <div class="col-xs-5">
                                             <div class="bar"><span class="fill fill4">Advanced</span></div>
                                         </div>
                                 </div>
                                 <p>
-                                        I've been an developer in the Java and JVM ecosystem since 2002. I have advanced
-                                        level experience with Maven, Guice, Guava, Jersey, Spring, Jackson, NIO, Hibernate,
-                                        Java 8 lambdas and Java 8 streams. I'm also professient with Clojure and Groovy as 
+                                        Including <a href="http://maven.apache.org/">Maven</a>, 
+                                        <a href="https://github.com/google/guice">Guice</a>, 
+                                        <a href="https://github.com/google/guava">Guava</a>, 
+                                        <a href="https://jersey.java.net/">Jersey</a>, 
+                                        <a href="http://projects.spring.io/spring-framework/">Spring</a>, 
+                                        <a href="https://github.com/FasterXML/jackson">Jackson</a>, 
+                                        <a href="http://en.wikipedia.org/wiki/Non-blocking_I/O_%28Java%29">NIO</a>, 
+                                        <a href="http://hibernate.org/">Hibernate</a>,
+                                        <a href="http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Java 8 lambdas</a>
+                                        and <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html">Java 8 streams</a>. 
+                                        Experience with <a href="http://clojure.org/">Clojure</a> and 
+                                        <a href="http://groovy.codehaus.org/">Groovy</a> as 
                                         alternatives on the JVM platform.
-                                    </p>
-                                    <p>
-                                        I've used Java and related JVM technologies while employed with 
-                                        <a href="#experience/medio">Medio</a>, 
-                                        <a href="#experience/qthru">QThru</a>,
-                                        <a href="#experience/blackberry">BlackBerry</a> and 
-                                        <a href-"#expereicne/ph-mining">P&amp;H Mining</a>.
                                     </p>
                                 </div>
 
                                 <div class="entity">
                                     <div class="row">
-                                        <div class="col-xs-7">JavaScript &amp; node.js</div>
+                                        <div class="col-xs-7"><i class="fa fa-fw fa-tasks"></i>&nbsp;JavaScript &amp; node.js</div>
                                         <div class="col-xs-5">
                                             <div class="bar"><span class="fill fill5">Expert</span></div>
                                         </div>
                                     </div>
                                     <p>
-                                        I started exploring JavaScript with Netscape Navigator 3 back in 1998. I've leveraged
-                                        JavaScript in the browser to generate dynamic UI elements, including autocomplete
-                                        fields before jQuery and chart libraries, like D3 and Google Chart, to report on data.
-                                        In 2012, I led the adoption of node.js for a real-time communication component with
-                                        <a href="#experience/qthru">QThru</a>. I've used grunt, restify, sequelize, react,
-                                        backbone, mongoose, D3, socket.io and lodash.
-                                    </p>
-                                    <p>
-                                        I've used JavaScript and node.js technologies at 
-                                        <a href="#experience/qthru">QThru</a>, 
-                                        <a href="#experience/code-fellows">Code Fellows</a> and 
-                                        <a href="#experience/medio">Medio</a>.
+                                        Includes <a href="http://jquery.com/">jQuery</a>, <a href="http://d3js.org">D3</a>,
+                                        <a href="https://developers.google.com/chart/">Google Charts</a>,
+                                        <a href="http://nodejs.org/">node.js</a>, <a href="http://gruntjs.com/">grunt</a>, 
+                                        <a href="http://mcavage.me/node-restify/">restify</a>, 
+                                        <a href="http://sequelizejs.com/">sequelize</a>, 
+                                        <a href="http://facebook.github.io/react/">react</a>,
+                                        <a href="http://backbonejs.org/">backbone</a>, 
+                                        <a href="http://mongoosejs.com/">mongoose</a>, 
+                                        <a href="http://d3js.org/">D3</a>, 
+                                        <a href="http://socket.io/">socket.io</a> and 
+                                        <a href="https://lodash.com/">lodash</a>.
                                     </p>
                                 </div>
 
                                 <div class="entity">
                                     <div class="row">
-                                        <div class="col-xs-7">Data Science &amp; Big Data</div>
+                                        <div class="col-xs-7"><i class="fa fa-fw fa-tasks"></i>&nbsp;Data Science &amp; Big Data</div>
                                         <div class="col-xs-5">
                                             <div class="bar"><span class="fill fill3">Intermediate</span></div>
                                         </div>
@@ -211,9 +208,15 @@
                                     <p>
                                         I've always has an inclination to solve problems related to the storage, retriveal
                                         and manipulation of data. I've spent considerable years setting up and working with
-                                        various relational databases - SQL Server, MySQL and PostgreSQL, For larger data sets,
-                                        I've used MongoDB, CouchDB and Cassandra. I've recently started deep diving into data 
-                                        science using R and python.
+                                        various relational databases - 
+                                        <a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/">SQL Server</a>,
+                                        <a href="http://www.mysql.com/">MySQL</a> and 
+                                        <a href="http://www.postgresql.org/">PostgreSQL</a>, For larger data sets,
+                                        I've used <a href="http://www.mongodb.org/">MongoDB</a>, 
+                                        <a href="http://couchdb.apache.org/">CouchDB</a> and 
+                                        <a href="http://cassandra.apache.org/">Cassandra</a>. I've recently started deep diving 
+                                        into data science using <a href="http://www.r-project.org/">R</a> and 
+                                        <a href="https://www.python.org/">python</a>.
                                     </p>
                                     <p>
                                         I've used relational and NoSQL databases while at
@@ -227,17 +230,21 @@
 
                                 <div class="entity">
                                     <div class="row">
-                                        <div class="col-xs-7">DevOps</div>
+                                        <div class="col-xs-7"><i class="fa fa-fw fa-tasks"></i>&nbsp;DevOps</div>
                                         <div class="col-xs-5">
                                             <div class="bar"><span class="fill fill3">Intermediate</span></div>
                                         </div>
                                     </div>
                                     <p>
-                                        I've been a strong adocate for DevOps since my 20% project at BlackBerry focusing
-                                        on improving the development pipeline. Since then, I've also been solely responsible
-                                        for building and managing infrastructure in AWS and Digital Ocean, setting up continious 
-                                        delivery solutions with Jenkins and TeamCity, automating development environment with
-                                        Vagrant, and automating Linux deployments with Ansible.
+                                        I've been a strong adocate for DevOps since my 20% project at 
+                                        <a href="#experience/blackberry">BlackBerry</a> focusing on improving the development 
+                                        pipeline. Since then, I've also been solely responsible for building and managing 
+                                        infrastructure in <a href="http://aws.amazon.com">AWS</a> and 
+                                        <a href="https://www.digitalocean.com/">Digital Ocean</a>, setting up continious 
+                                        delivery solutions with <a href="http://jenkins-ci.org/">Jenkins</a> and 
+                                        <a href="https://www.jetbrains.com/teamcity/">TeamCity</a>, automating development 
+                                        environment with <a href="https://www.vagrantup.com/">Vagrant</a>, and automating 
+                                        Linux deployments with <a href="http://www.ansible.com/home">Ansible</a>.
                                     </p>
                                     <p>
                                         I've demonstrated my DevOps skills at
@@ -248,37 +255,22 @@
                                     </p>
                                 </div>
 
-                                <div class="entity">
-                                    <div class="row">
-                                        <div class="col-xs-7">HTML, CSS &amp; Design</div>
-                                        <div class="col-xs-5">
-                                            <div class="bar"><span class="fill fill2">Beginner</div>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        I have a fundamental knowledge of encoding HTML and CSS with a basic
-                                        understanding of design principals and information design. Much of my 
-                                        knowledge is focused on HTML5 standards and much of my work has been
-                                        in more enterprise dashboard applications. I have used bootstrap and
-                                        dabbled with foundation.
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
                     </section>
 
 
+                    <div id="experience" class="placeholder"></div>
                     <section id="experience" class="section">
                         <h1>Work Experience</h1>
                         <div class="row">
                             <div class="col-md-8 col-md-offset-4">
                                 <div id="experience/medio" class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Senior Software Engineer</span>
-                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jan 2014 - Sep 2014</span>
+                                        <span class="col-xs-7"><i class="fa fa-fw fa-user"></i>&nbsp;Senior Software Engineer</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;Jan 2014 - Sep 2014</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;Medio</div>
+                                    <div class="name"><i class="fa fa-fw fa-briefcase"></i>&nbsp;Medio</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -301,10 +293,10 @@
 
                                 <div id="experience/code-fellows" class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Instructor</span>
-                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Oct 2013 - Dec 2014</span>
+                                        <span class="col-xs-7"><i class="fa fa-fw fa-user"></i>&nbsp;Instructor</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;Oct 2013 - Dec 2014</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;Code Fellows</div>
+                                    <div class="name"><i class="fa fa-fw fa-briefcase"></i>&nbsp;Code Fellows</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -323,10 +315,10 @@
 
                                 <div id="experience/qthru" class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Principal Software Engineer</span>
-                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;May 2012 - Sep 2013</span>
+                                        <span class="col-xs-7"><i class="fa fa-fw fa-user"></i>&nbsp;Principal Software Engineer</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;May 2012 - Sep 2013</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;QThru</div>
+                                    <div class="name"><i class="fa fa-fw fa-briefcase"></i>&nbsp;QThru</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -353,10 +345,10 @@
 
                                 <div id="experience/blackberry" class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp;Senior Software Engineer</span>
-                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jan 2011 - Apr 2012</span>
+                                        <span class="col-xs-7"><i class="fa fa-fw fa-user"></i>&nbsp;Senior Software Engineer</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;Jan 2011 - Apr 2012</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry, PlayBook Platform</div>
+                                    <div class="name"><i class="fa fa-fw fa-briefcase"></i>&nbsp;BlackBerry, PlayBook Platform</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -375,10 +367,10 @@
 
                                 <div class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7 title"><i class="fa fa-user"></i>&nbsp;Software Engineer</span>
-                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Jun 2007 - Dec 2010</span>
+                                        <span class="col-xs-7 title"><i class="fa fa-fw fa-user"></i>&nbsp;Software Engineer</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;Jun 2007 - Dec 2010</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;BlackBerry, BIS Email</div>
+                                    <div class="name"><i class="fa fa-fw fa-briefcase"></i>&nbsp;BlackBerry, BIS Email</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -401,10 +393,10 @@
 
                                 <div id="experience/ph-mining" class="entity">
                                     <div class="row">
-                                        <span class="col-xs-7"><i class="fa fa-user"></i>&nbsp; Programmer/Analyst</span>
-                                        <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;Oct 2001 - Aug 2006</span>
+                                        <span class="col-xs-7"><i class="fa fa-fw fa-user"></i>&nbsp; Programmer/Analyst</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;Oct 2001 - Aug 2006</span>
                                     </div>
-                                    <div class="name"><i class="fa fa-briefcase"></i>&nbsp;P&amp;H Mining</div>
+                                    <div class="name"><i class="fa fa-fw fa-briefcase"></i>&nbsp;P&amp;H Mining</div>
                                     <ul class="fa-ul">
                                         <li>
                                             <i class="fa-li fa fa-angle-right"></i>
@@ -440,83 +432,84 @@
                     </section>
 
 
-        <section id="education" class="section">
-            <h1>Education</h1>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-4">
-
-                    <div class="entity">
+                    <div id="education" class="placeholder"></div>
+                    <section id="education" class="section">
+                        <h1>Education</h1>
                         <div class="row">
-                            <span class="col-xs-7 title"><i class="fa fa-book"></i>&nbsp;BS, Computer Science</span>
-                            <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;2001 - 2007</span>
-                        </div>
-                        <div class="name"><i class="fa fa-university"></i>&nbsp;University of Wisconsin - Milwaukee</div>
-                        <ul class="fa-ul">
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Minor in Business Administrator
-                            </li>
-                        </ul>
-                    </div>
+                            <div class="col-md-8 col-md-offset-4">
 
-                    <div class="entity">
-                        <div class="row">
-                            <span class="col-xs-7"><i class="fa fa-certificate"></i>&nbsp;Data Science Specialization</span>
-                            <span class="col-xs-5"><i class="fa fa-calendar"></i>&nbsp;2014 - 2015 (expected)</span>
-                        </div>
-                        <div class="name"><i class="fa fa-university"></i>&nbsp;John Hopkins University on Coursera</div>
-                        <ul class="fa-ul">
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/UMBPHLGDP2">Data 
-                                    Scientist&apos;s Toolbox</a> with distinction.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/5MWCZQLKED">R
-                                    Programming</a> with distinction.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/DQVMMF7XTG">Getting
-                                    and Cleaning Data</a> with distinction.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/58W79MWYM3">
-                                    Exploratory Data Analysis</a> with distinction.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Currently enrolled in Reproducable Research.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Passed <a href="https://www.coursera.org/account/accomplishments/certificate/WLAM8GMTJJ">
-                                    Statistical Inference</a>.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Pending enrollment in Regression Models.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Pending enrollment in Practical Machine Learning.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Pending enrollment in Developing Data Products.
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-angle-right"></i>
-                                Pending enrollment in Data Science Capstone.
-                            </li>
-                        </ul>
-                    </div>
+                                <div class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7 title"><i class="fa fa-fw fa-book"></i>&nbsp;BS, Computer Science</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;2001 - 2007</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-fw fa-university"></i>&nbsp;University of Wisconsin - Milwaukee</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Minor in Business Administrator
+                                        </li>
+                                    </ul>
+                                </div>
 
-                </div>
-            </div>
-        </section>
+                                <div class="entity">
+                                    <div class="row">
+                                        <span class="col-xs-7"><i class="fa fa-fw fa-certificate"></i>&nbsp;Data Science Specialization</span>
+                                        <span class="col-xs-5"><i class="fa fa-fw fa-calendar"></i>&nbsp;2014 - 2015 (expected)</span>
+                                    </div>
+                                    <div class="name"><i class="fa fa-fw fa-university"></i>&nbsp;John Hopkins University on Coursera</div>
+                                    <ul class="fa-ul">
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Passed <a href="https://www.coursera.org/account/accomplishments/certificate/UMBPHLGDP2">Data 
+                                                Scientist&apos;s Toolbox</a> with distinction.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Passed <a href="https://www.coursera.org/account/accomplishments/certificate/5MWCZQLKED">R
+                                                Programming</a> with distinction.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Passed <a href="https://www.coursera.org/account/accomplishments/certificate/DQVMMF7XTG">Getting
+                                                and Cleaning Data</a> with distinction.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Passed <a href="https://www.coursera.org/account/accomplishments/certificate/58W79MWYM3">
+                                                Exploratory Data Analysis</a> with distinction.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Currently enrolled in Reproducable Research.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Passed <a href="https://www.coursera.org/account/accomplishments/certificate/WLAM8GMTJJ">
+                                                Statistical Inference</a>.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Pending enrollment in Regression Models.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Pending enrollment in Practical Machine Learning.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Pending enrollment in Developing Data Products.
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-angle-right"></i>
+                                            Pending enrollment in Data Science Capstone.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
 
         </div>
     </div>
