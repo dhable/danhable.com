@@ -7,7 +7,11 @@
 }
 
 body {
-    margin: 5em 0;
+     background: url("images/servers2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
@@ -22,19 +26,10 @@ header {
     padding: 0.25em;
 }
 
-.placeholder {
-    margin-bottom: 2em;
-    padding: 1em;
-    display: block;
-}
-
 .section {
-    margin: 0 1em;
+    margin: 2em 1em;
     padding: 1em;
     background-color: White;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .section>h1 {
