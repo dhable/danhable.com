@@ -17,7 +17,7 @@ header {
 
 .social-links>a {
     color: White;
-    background-color: Red;
+    background-color: #1d9d74;
     display: inline-block;
     padding: 0.25em;
 }
@@ -41,7 +41,7 @@ header {
     font-size: 1.5em;
     text-transform: uppercase;
     display: inline-block;
-    border-bottom: .25em solid Red;
+    border-bottom: .25em solid #1d9d74;
 }
 
 .entity {
@@ -54,13 +54,14 @@ header {
 
 /* layout stuff for the experience meters in skills section */
 .bar {
+    color: White;
     background-color: #b1b1b1;
     padding: 0;
     width: 100%;
 }
 
 .fill { 
-    background-color: #FF9999;
+    background-color: #1d9d74;
     display: inline-block; 
     padding: 0 0.5em;
 }
