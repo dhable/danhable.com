@@ -1,0 +1,84 @@
+.pull-center {
+    text-align: center;
+}
+
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    margin: 5em 0;
+}
+
+header {
+    border: 0;
+    margin: 4em 1em 0 1em;
+}
+
+.social-links>a {
+    color: White;
+    background-color: Red;
+    display: inline-block;
+    padding: 0.25em;
+}
+
+.placeholder {
+    margin-bottom: 2em;
+    padding: 1em;
+    display: block;
+}
+
+.section {
+    margin: 0 1em;
+    padding: 1em;
+    background-color: White;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.section>h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: .25em solid Red;
+}
+
+.entity {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.entity>ul { margin: .25em 4em; }
+
+
+/* layout stuff for the experience meters in skills section */
+.bar {
+    background-color: #b1b1b1;
+    padding: 0;
+    width: 100%;
+}
+
+.fill { 
+    background-color: #FF9999;
+    display: inline-block; 
+    padding: 0 0.5em;
+}
+
+.fill1 { width: 20%;  -webkit-animation: fill1 2s linear; -moz-animation: fill5 2s linear; }
+.fill2 { width: 40%;  -webkit-animation: fill2 2s linear; -moz-animation: fill5 2s linear; }
+.fill3 { width: 60%;  -webkit-animation: fill3 2s linear; -moz-animation: fill5 2s linear; }
+.fill4 { width: 80%;  -webkit-animation: fill4 2s linear; -moz-animation: fill5 2s linear; }
+.fill5 { width: 100%; -webkit-animation: fill5 2s linear; -moz-animation: fill5 2s linear; }
+
+@-webkit-keyframes fill1 { 0% {width: 0px;} 100% {width: 20%;}  }
+@-webkit-keyframes fill2 { 0% {width: 0px;} 100% {width: 40%;}  }
+@-webkit-keyframes fill3 { 0% {width: 0px;} 100% {width: 60%;}  }
+@-webkit-keyframes fill4 { 0% {width: 0px;} 100% {width: 80%;}  }
+@-webkit-keyframes fill5 { 0% {width: 0px;} 100% {width: 100%;} }
+
+@-moz-keyframes fill1 { 0% {width: 0px;} 100% {width: 20%;}  }
+@-moz-keyframes fill2 { 0% {width: 0px;} 100% {width: 40%;}  }
+@-moz-keyframes fill3 { 0% {width: 0px;} 100% {width: 60%;}  }
+@-moz-keyframes fill4 { 0% {width: 0px;} 100% {width: 80%;}  }
+@-moz-keyframes fill5 { 0% {width: 0px;} 100% {width: 100%;} }
