@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="app.css">
@@ -8,16 +9,25 @@
 
 
     <body>
-        <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top hidden-xs">
+            <div class="container-fluid">
+                <p class="navbar-brand navbar-left">Dan Hable <br/> Experienced Software Engineer</p>
+                <p class="navbar-brand navbar-right"><i class="fa fa-fw fa-envelope-o"></i>&nbsp;dan@danhable.com</p>
+            </div>
+        </nav>
+
+        <div class="content container-fluid">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
 
                     <div id="profile"></div>
                     <header id="profile" class="section">
-                        <h1>Dan Hable</h1>
+                        <h1 class="hidden-xs">Profile</h1>
+                        <h1 class="visible-xs-block">Dan Hable<br/>dan@danhable.com</h1>
+
 
                         <div class="row">
-                            <div class="col-sm-3 pull-center">
+                            <div class="col-sm-3 center">
                                 <p>
                                     <img src="images/dan.jpg" width="140" height="140" alt="Dan Hable">
                                 </p>
@@ -114,14 +124,6 @@
                                         into data science using <a href="http://www.r-project.org/">R</a> and 
                                         <a href="https://www.python.org/">python</a>.
                                     </p>
-                                    <p>
-                                        I've used relational and NoSQL databases while at
-                                        <a href="#medio">Medio</a>, 
-                                        <a href="#code-fellows">Code Fellows</a>,
-                                        <a href="#qthru">QThru</a>,
-                                        <a href="#blackberry">BlackBerry</a> and 
-                                        <a href-"#ph-mining">P&amp;H Mining</a>.
-                                    </p>
                                 </div>
 
                                 <div class="entity">
@@ -141,13 +143,6 @@
                                         <a href="https://www.jetbrains.com/teamcity/">TeamCity</a>, automating development 
                                         environment with <a href="https://www.vagrantup.com/">Vagrant</a>, and automating 
                                         Linux deployments with <a href="http://www.ansible.com/home">Ansible</a>.
-                                    </p>
-                                    <p>
-                                        I've demonstrated my DevOps skills at
-                                        <a href="#medio">Medio</a>,
-                                        <a href="#code-fellows">Code Fellows</a>,
-                                        <a href="#qthru">QThru</a> and
-                                        <a href="#blackberry">BlackBerry</a>.
                                     </p>
                                 </div>
 

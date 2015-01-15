@@ -1,9 +1,29 @@
-.pull-center {
+* {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.center {
     text-align: center;
 }
 
-* {
-    font-family: 'Droid Sans', sans-serif;
+@media(min-width: 768px) {
+    .navbar-inverse {
+        background-color: #1d9d74;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: White;
+    }
+
+    .content {
+        margin-top: 55px;
+    }
+}
+
+@media(max-width: 768px) {
+    .content {
+        margin-top: 0px;
+    }
 }
 
 body {
