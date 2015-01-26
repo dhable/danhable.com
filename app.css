@@ -13,6 +13,7 @@
 
     .navbar-inverse .navbar-brand {
         color: White;
+        font-size: 1.5em;
     }
 
     .content {
@@ -27,11 +28,12 @@
 }
 
 body {
-     background: url("images/servers.jpg") no-repeat center center fixed;
+    background: url("images/servers.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    max-width: 960px;
 }
 
 header {
@@ -39,6 +41,7 @@ header {
     margin: 4em 1em 0 1em;
 }
 
+.social-links { white-space: nowrap; }
 .social-links>a {
     color: White;
     background-color: #1d9d74;
