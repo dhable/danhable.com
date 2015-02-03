@@ -7,7 +7,16 @@
 }
 
 @media(min-width: 768px) {
-    .navbar-inverse {
+     body {
+        background: url("http://www.danhable.com/images/servers.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        max-width: 960px;
+    }
+
+   .navbar-inverse {
         background-color: #1d9d74;
     }
 
@@ -25,15 +34,6 @@
     .content {
         margin-top: 0px;
     }
-}
-
-body {
-    background: url("http://www.danhable.com/images/servers.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    max-width: 960px;
 }
 
 header {

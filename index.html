@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="http://www.danhable.com/lib/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://www.danhable.com/lib/fontawesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://www.danhable.com/app.css">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="app.css">
         <title>Dan Hable | dan@danhable.com | Experienced Software Engineer</title>
     </head>
 
@@ -13,7 +13,10 @@
         <nav class="navbar navbar-inverse navbar-fixed-top hidden-xs">
             <div class="container-fluid">
                 <p class="navbar-brand navbar-left">Dan Hable</p>
-                <p class="navbar-brand navbar-right"><i class="fa fa-fw fa-envelope-o"></i>&nbsp;dan@danhable.com</p>
+                <p class="navbar-brand navbar-right">
+                    <i class="fa fa-fw fa-envelope-o"></i>&nbsp;
+                    <a href="mailto:dan@danhable.com">dan@danhable.com</a>
+                </p>
             </div>
         </nav>
 
@@ -42,7 +45,10 @@
                             </div>
 
                             <div class="col-sm-9">
-                                <p class="visible-xs-block center">dan@danhable.com</p>
+                                <p class="visible-xs-block center">
+                                    <i class="fa fa-fw fa-envelope-o"></i>&nbsp;
+                                    <a href="mailto:dan@danhable.com">dan@danhable.com</a>
+                                </p>
                                 <p>
                                     Software engineer with 15 years of experience delivering scalable, fault tolerant, 
                                     distributed solutions. Specializes in building high volume, real-time data pipelines 
@@ -444,7 +450,7 @@
             </div>
         </div>
 
-        <script src="http://www.danhable.com/lib/jquery/dist/jquery.min.js"></script>
+        <script src="lib/jquery/dist/jquery.min.js"></script>
         <script>
             $("a[href^='#']").on("click", function(e) {
                 e.preventDefault();
