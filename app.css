@@ -7,10 +7,6 @@
 }
 
 @media(min-width: 768px) {
-     body {
-        max-width: 960px;
-    }
-
    .navbar-inverse {
         background-color: #1d9d74;
     }
