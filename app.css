@@ -15,9 +15,9 @@ body {
 header {
     margin: 2em 0;
     padding: 1em;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #b3b3b3;
+    -webkit-box-shadow: 3px 3px 5px 6px #b3b3b3;
+    box-shadow: 3px 3px 5px 6px #b3b3b3;
     background-color: White;
 }
 
@@ -39,9 +39,9 @@ header hr { color: #1d9d74; background-color: #1d9d74; height: 1px; }
     margin: 2em 0em;
     padding: 1em;
     background-color: White;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #b3b3b3;
+    -webkit-box-shadow: 3px 3px 5px 6px #b3b3b3;
+    box-shadow: 3px 3px 5px 6px #b3b3b3;
 }
 
 .section>h1 {
@@ -62,7 +62,7 @@ header hr { color: #1d9d74; background-color: #1d9d74; height: 1px; }
 /* layout stuff for the experience meters in skills section */
 .bar {
     color: White;
-    background-color: #b1b1b1;
+    background-color: #b3b3b3;
     padding: 0;
     width: 100%;
 }
