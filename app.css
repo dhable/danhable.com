@@ -6,31 +6,19 @@
     text-align: center;
 }
 
-@media(min-width: 768px) {
-   .navbar-inverse {
-        background-color: #1d9d74;
-    }
-
-    .navbar-inverse .navbar-brand {
-        color: White;
-        font-size: 1.5em;
-    }
-
-    .content {
-        margin-top: 55px;
-    }
-}
-
-@media(max-width: 768px) {
-    .content {
-        margin-top: 0px;
-    }
-}
-
 header {
-    border: 0;
-    margin: 4em 1em 0 1em;
+    margin: 2em 1em;
+    padding: 1em;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
+
+header h1 { font-size: 3em; font-weight: bolder; line-height: 0.5em; }
+header h2 { font-size: 2em; font-weight: lighter; line-height: 0.5em; }
+header li { font-size: 1.25em; }
+header hr { color: #1d9d74; background-color: #1d9d74; height: 1px; }
+
 
 .social-links { white-space: nowrap; }
 .social-links>a {
