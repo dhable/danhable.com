@@ -2,16 +2,23 @@
     font-family: 'Droid Sans', sans-serif;
 }
 
+body {
+    background-image: url("images/pattern-49aj.png");
+    border: 0;
+    padding: 0;
+}
+
 .center {
     text-align: center;
 }
 
 header {
-    margin: 2em 1em;
+    margin: 2em 0;
     padding: 1em;
     -moz-box-shadow: 3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow: 3px 3px 5px 6px #ccc;
+    background-color: White;
 }
 
 header h1 { font-size: 3em; font-weight: bolder; line-height: 0.5em; }
@@ -29,7 +36,7 @@ header hr { color: #1d9d74; background-color: #1d9d74; height: 1px; }
 }
 
 .section {
-    margin: 2em 1em;
+    margin: 2em 0em;
     padding: 1em;
     background-color: White;
     -moz-box-shadow: 3px 3px 5px 6px #ccc;
