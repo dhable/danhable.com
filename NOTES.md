@@ -1,8 +1,6 @@
 # NOTES
 
-* Revamp project to use Reason instead of ClojureScript
-
-* Data encoded as JSON files
+* Data encoded as YAML files
 
 * Write build script to push files into S3 bucket automatically
 

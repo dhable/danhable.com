@@ -2,3 +2,4 @@
 *.iml
 target/
 .cpcache/
+node_modules/

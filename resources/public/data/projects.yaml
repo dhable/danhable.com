@@ -1,0 +1,72 @@
+%YAML 1.2
+---
+- title: Game of Thangs
+  description: >
+    Work in progress
+  active:
+    from: 04/2020
+  url: https://github.com/dhable/thangs
+  tech:
+    - AWS Lambda
+    - DynamoDB
+    - AWS API Gateway
+    - Websocket
+    - React.js
+    - Material UI
+    - Scala.js
+- title: grunt-simple-license
+  description: >
+    Every large company goes through an exercise to inspect all the open source dependencies
+    and ensure that the license is agreeable to their lawyers. This plugin was started to fulfill
+    just that need after we failed to get existing plugins to work. grunt-simple-license will
+    read the npm or bower license metadata field and produce a report. You can also set a default
+    in your project's grunt file if the authors of the package didn't add the license
+    field (tisk, tisk).
+  active: 09/2014
+  url: https://github.com/dhable/grunt-simple-license
+  tech:
+    - node.js
+    - grunt
+- title: grunt-waitfor
+  description: >
+    When I started automating a series of integration tests using Vagrant as the virtual container,
+    I discovered that there wasn't a good way to pause my grunt script until Vagrant was finished.
+    The grunt-waitfor plugin solves this problem by blocking the grunt execution until a shell
+    command (I used curl) completes successfully. The plugin was written for grunt 0.4.x.
+  active: 04/2014
+  url: https://github.com/dhable/grunt-waitfor
+  tech:
+    - node.js
+    - grunt
+- title: ModBox Website
+  description: >
+    Matt Gamboa approached me in August 2013 to help build out a simple e-commerce portal for his
+    new clothing statup, ModBox. To facilitate the business, we launched a website in three weeks
+    that signs users up for the service, let's them develop a fit and interest profile and securely
+    captures their billing information to charge purchases to. The site was built Using node.js
+    (express, jade, mongoose), MongoDB, and Stripe.
+  active:
+    from: 9/2013
+    to: 11/2013
+  tech:
+    - node.js
+    - express
+    - jade
+    - mongoose
+    - MongoDB
+    - stripe
+- title: Perl Module - Tk::Wizard
+  description: >
+    The module grew out of work being done at P&H Mining to automate various source management
+    activities with PVCS. An engineering consulting group built an automation solution using C++/MFC
+    for the UI and Perl for scripting the source manipulation tasks. After creating a visual framework
+    around a wizard like flow, the entire code base was centralized around Perl. After the project
+    was done, the source code was open sourced and published on the Internet and Lee Goddard volunteered
+    to provide long term support for the module.
+  active:
+    from: 10/2001
+    to: 11/2002
+  url: https://metacpan.org/pod/release/LGODDARD/Tk-Wizard-2.151/lib/Tk/Wizard.pm
+  tech:
+    - Perl 5
+    - Perl/Tk

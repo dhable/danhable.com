@@ -1,9 +1,14 @@
-{:deps {com.bhauman/figwheel-main {:mvn/version "0.2.3"}
-        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
-        metosin/spec-tools {:mvn/version "0.10.0"}}
+{:deps {org.clojure/clojurescript  {:mvn/version "1.10.773"}
+        com.bhauman/figwheel-main  {:mvn/version "0.2.6"}
+        com.cognitect/transit-cljs {:mvn/version "0.8.264"}
+        cljsjs/js-yaml             {:mvn/version "3.3.1-0"}
+        cljs-http                  {:mvn/version "0.1.46"}
+        prismatic/schema           {:mvn/version "1.1.12"}
+        reagent                    {:mvn/version "1.0.0-alpha2"}
+        reagent-material-ui        {:mvn/version "0.2.5"}}
 
  ;; setup some development paths
- :paths ["src" "target" "resources"]
+ :paths ["src" "tests" "resources" "target"]
 
  ;; setup a helpful alias to start the build
- :aliases {:build-dev {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}}}
+ :aliases {:build-dev {:main-opts ["-m" "figwheel.main" "--build" "dev" "--repl"]}}}

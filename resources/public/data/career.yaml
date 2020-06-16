@@ -1,0 +1,248 @@
+%YAML 1.2
+---
+- name: Rally Health
+  url: https://www.rallyhealth.com/
+  positions:
+    - title: Not Sure
+      start: 04-2020
+      brief: Writing scala code
+      tech:
+        - scala
+        - sbt
+- name: DataStax
+  url: https://www.datastax.com
+  positions:
+    - title: Staff Software Engineer
+      start: 11-2018
+      end: 04-2020
+      brief: Did a little bit of everything for the company.
+      highlights:
+        - Was part of a team designing billing services using Stripe for DataStax Astra.
+        - Built a prototype GraphQL proxy server that would stitch gRPC and other GraphQL components automatically into a single schema.
+        - Profiled and fixed numerous memory issued with Jython and the twisted framework using YourKit and Java Flight Recorder.
+        - Built pluggabale authentication framework for OpsCenter enabling customers to provide their own connectors for enterprise customers.
+      tech:
+        - clojure
+        - java 8
+        - java 11
+        - go
+        - react.js
+        - node v12
+        - cassandra
+    - title: Senior Software Engineer
+      start: 04-2015
+      end: 10-2018
+      brief: Rock star on OpsCenter team.
+      highlights:
+        - Prototyped migration strategy for Jython app using dropwizard as an application container and netty to proxy legacy STOMP connections to leverage the JVM for networking instead of Jython.
+        - Designed and implemented a Clojure to Jython interop library enabling legacy python code to be used from Clojure like native functions.
+        - Led efforts to improve the performance and reliability of the S3 backup feature. Included replacing jclouds with native AWS SDK, fixing unnessary reflection in Clojure and fixing threading model.
+        - Implemented new agent setup, health and diagnostics UI screens from designer wireframes using dojo and python.
+      tech:
+        - python
+        - clojure
+        - dojo
+        - cassandra
+        - java 8
+        - aws
+- name: jetway.io
+  positions:
+    - title: Principal, Co-founder
+      start: 01-2014
+      end: 02-2015
+      brief: >
+        jetway.io was born out of the frustration of deploying and managing applications in AWS while we
+        worked at QThru. Over the course of the year, the founding team developed two prototype products
+        to ease deployment of cloud resources and ease the user identity management of those resources.
+        The founders decided to close up shop in February of 2015 and move on to other opportunities.
+      highlights:
+        - Led product development for solutions in cloud deployment and identity management as a service solutions.
+        - Onboarded founding team members and established Founders Agreement between the founding team.
+        - Built initial back end services for products using node.js and restify.
+        - Mentored front end engineer on JavaScript, CSS and Ember.js to deliver UI prototypes on time.
+      tech:
+        - node 0.8
+        - ember.js
+        - clojure
+        - postgresql
+- name: Code Fellows
+  url: https://www.codefellows.com
+  positions:
+    - title: JavaScript Instructor (contractor)
+      start: 10-2013
+      end: 12-2013
+      brief: >
+        Developed syllabus, selected readings, and built exercises for initial JavaScript Development Accelerator.
+      tech:
+        - javascript
+        - node 0.6
+        - lodash
+        - backbone.js
+        - websocket
+    - title: Python Instructor (contractor)
+      start: 09-2014
+      end: 12-2014
+      highlights:
+        - Assistant instructor Nov/Dec 2013 JavaScript Accelerator and Sep 2014 Python Foundation II.
+        - Lead instructor Oct/Nov 2014 Python Development Accelerator and Apr 2015 Python Foundation II.
+      tech:
+        - flask
+        - django
+        - python
+        - postgresql
+- name: Medio
+  positions:
+    - title: Senior Software Engineer
+      start: 01-2014
+      end: 09-2014
+      brief: >
+        The monetize team was responsible for merging Medio's predictive analytics models, customer
+        data points and current user activity to present compelling recommendations and offers to users.
+        Our systems needed to support millions of active users with minimal latency. Medio was acquired
+        by Nokia HERE in July of 2014.
+      highlights:
+        - Led redesign of JavaScript data collection SDK, improving the API and focusing functionality.
+        - Prototyped Facebook targeted ads as an additional outbound marketing channel.
+        - Led addition of mobile push notifications as an additional outbound marketing channel.
+        - Identified and fixed design issue that would potentially cause a ~60% data loss with events in Cassandra.
+        - Identified deployment issue that led from 8 TPS to 80 TPS on a critical data import process.
+        - Identified root cause of HTTP protocol mistake by a third party that was causing delay in the marketing offer service.
+      tech:
+        - java 6
+        - cassandra
+        - akka
+        - javascript
+        - spring
+        - aws
+        - postgresql
+        - maven
+- name: QThru
+  positions:
+    - title: Principal Software Engineer
+      start: 05-2012
+      end: 09-2013
+      brief: >
+        QThru offered a cloud based mobile POS platform for retail stores. As the principal software
+        engineer, I focused a lot of effort on hardening up and expanding the functionality of the
+        backend cloud services, tuning database performance, managing service deployments in AWS, ensuring
+        security of the platform and working with product to develop new services that we could sell.
+        In addition to providing the architecture and production quality code, I also hosted lunch
+        and learn sessions for the engineering teams and managed project scheduled. QThru abruptly went
+        bankrupt in 2013 after funding could not be secured from our investor.
+      highlights:
+        - Led development of real-time, distributed, PCI compliant point of sale integration.
+        - Led development of a scalable data transform and load process based on Akka.
+        - Mentored development team on node.js best practices during adoption.
+        - Automated DB schema deployments using Flyway.
+        - Established continuous integration pipeline for development team using Jenkins hosted by CloudBees.
+        - Supported CEO and CMO during sales calls with potential customers.
+      tech:
+        - java 6
+        - node 0.6
+        - mysql
+        - aws
+        - akka
+        - clojure
+        - spring web
+        - jenkins
+        - maven
+        - c#
+- name: BlackBerry
+  url: https://www.blackberry.com
+  positions:
+    - title: Senior Software Engineer
+      start: 01-2011
+      end: 04-2012
+      brief: >
+        Based on existing knowledge of mail protocols and prior experiences working in a startup, I
+        was asked to join the global team assigned to bring mail, calendar and contact applications
+        to the BlackBerry PlayBook platform. This goal often times required building the platform
+        services and frameworks that would later be bundled into BB10. I traveled between Seattle,
+        Waterloo and Ottawa for the duration of the project coordinating with the various mail development
+        teams.
+      highlights:
+        - Led development of ActiveSync engine in python 3.x used by team of 6 protocol developers in Seattle, Ottawa, and Waterloo.
+        - Solved issues related to mail server quirks, network connectivity, and memory usage.
+        - Collaborated with core development team on common platform designs.
+        - Mentored Java developers on development best practices in Python.
+      tech:
+        - python 3
+        - qnx
+        - activesync
+        - imap
+        - pop
+    - title: Software Engineer
+      start: 06-2007
+      end: 12-2010
+      brief: >
+        BlackBerry Internet Service - Email was designed to provide a managed mobile email synchronization
+        service for consumers who wanted to connect their BlackBerry devices to their personal email accounts
+        and did not need mobile device management support. Our group supported the integration and support
+        of third party internet service providers like Google and Yahoo. BlackBerry discontinued the product
+        in December of 2010 and reassigned engineers to other products.
+      highlights:
+        - Developed new mail and contact sync connector for Microsoft's Hotmail service.
+        - Developed mailbox search integration from handhelds to Gmail through the IMAP interface.
+        - Led development of an integration bridge between BIS services and a newly acquired mail server, Alt-N MDaemon.
+        - Led investigation for continuous delivery improvements resulting in 60% reduction in build times.
+        - Presented improved developer workflow with git to global audience of managers.
+      tech:
+        - java 6
+        - spring
+        - servlet
+        - ant
+        - maven
+        - jenkins
+        - oracle
+        - xml
+- name: P&H Mining
+  positions:
+    - title: Programmer/Analyst
+      start: 10-2001
+      end: 08-2006
+      brief: >
+        P&H Mining, a division of Joy Global, manufactures large mining equipment for every continent in
+        the world. Our group provided IT system and software support to engineering and aftermarket part
+        sales as well as evaluating new technologies for possible adoption on a larger level.
+      highlights:
+        - Researched emerging software development technologies for use by the global IT department.
+        - Designed, developed, and supported an internal IT work-flow system; demonstrating how a web application using Java and SQL Server could provide global access for users and rich reporting capabilities for management.
+        - Designed and developed a time collection bridge using Microsoft .Net that connected the existing time card management solution to SAP R/3, saving the company from investing in a new setup.
+        - Designed and developed a global transaction transport system that connected five legacy systems across the globe to the new eCommerce package.
+        - Assisted the electrical engineering department in rolling out a source control management system and strategy that accommodated both their legacy and new development processes.
+      tech:
+        - java 4
+        - struts
+        - sql server 2000
+        - vb.net
+        - c#
+        - perl
+- name: Keane
+  positions:
+    - title: Senior Consultant
+      start: 05-2000
+      end: 09-2001
+      brief: >
+        I worked as a contractor developing and supporting the nightly agent payroll commission system at
+        Northwestern Mutual. I focused on the UI middleware components and the structure of the existing code.
+      highlights:
+        - Developed business logic middleware component in C++ for the agent commission management UI.
+        - Tracked down numerous memory leaks and pointer errors using Rational Purify.
+      tech:
+        - sybase
+        - c++
+        - rougewave
+- name: XLink
+  positions:
+    - title: Software Engineer I
+      start: 05-1998
+      end: 01-1999
+      brief: Working on XML and XSLT libraries in C++.
+      highlights:
+        - XML and XSLT parsing in C++
+      tech:
+        - c++
+        - xml
+        - xslt
+        - dsssl
+        - sgml
